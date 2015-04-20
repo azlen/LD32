@@ -1,0 +1,18 @@
+this way
+over here
+this direction
+come on
+quickly
+faster
+
+quietly
+
+1: very close
+5: fairly close
+10: near
+20: slightly distant
+50: distant
+100: far
+150 - 200: basically can't hear it (when it is the only sound)
+200+: basically non-existent
+
