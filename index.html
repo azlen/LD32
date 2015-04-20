@@ -4,32 +4,59 @@
     <title>LD32</title>
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+    	html, body{
+    		margin:0px;
+    		padding:0px;
+    		width:100%;
+    		height:100%;
+    	}
+    	body{
+    		background-color:#050505
+    	}
+    	#DEBUG{
+    		position:absolute;
+    		top:0;
+    		left:0;
+    		outline:1px solid #fff;
+    	}
+    	#title{
+    		display:block;
+    		margin:auto;
+    		animation: blur 10s ease 0s infinite;
+    		-webkit-animation: blur 10s ease 0s infinite;
+    		filter: blur(10px);
+    		-webkit-filter: blur(10px);
+    	}
+    	@keyframes blur{
+    		50%{
+    			filter: blur(1px);
+    			-webkit-filter: blur(1px);
+    		}
+    		100%{
+    			filter: blur(10px);
+    			-webkit-filter: blur(10px);
+    		}
+    	}
+    	@-webkit-keyframes blur{
+    		50%{
+    			filter: blur(1px);
+    			-webkit-filter: blur(1px);
+    		}
+    		100%{
+    			filter: blur(10px);
+    			-webkit-filter: blur(10px);
+    		}
+    	}
+    </style>
 </head>
 <body>
     <script src="libraries/minivents.js"></script>
-    <script src="libraries/audio.js"></script>
+    <script src="libraries/howler.js"></script>
 
     <script src="main.js"></script>
 
-    <aside class="help">
-        <h2>Help</h2>
-    </aside>
-
-    <header>
-        This game uses 3D audio and requires <b>earphones</b> or <b>headphones</b> for the effect to work<br /><br />
-        Make sure you are using a latest (or new) version of <b>chrome</b> or <b>firefox</b>
-    </header>
-
-    <div class="centered">
-        <b>Choose your preferred controls</b>
-        <br /><br />
-        Mouse w/ pointer lock is <b>recomended</b> for best experience
-        <br /><br />
-        <div class="container">
-            <div onclick="setcontrols('mouse')"><h1>Mouse</h1></div>
-            <div onclick="setcontrols('keyboard')"><h1>Keyboard</h1></div>
-        </div>
-    </div>
+    <img id="title" src="GLOOM.png" />
 </body>
 </html>
